@@ -2,17 +2,14 @@
 # (1) a vista com 5% de desconto; (2) o valor da parcela em 2x; (3) o valor da parcela
 # em 3x com acréscimo de 5%
 
-input('Escolha um produto: uma bolsa, um relógio, um manga de chainsaw man')
+valorProduto = int(input("Digite o valor do produto: "))
 
-produto = (x, y, c)
+ValorDesconto = round(valorProduto * 0.95, 2)
+ValorParcela2x = round(valorProduto / 2, 2)
+ValorParcela3x = round((valorProduto / 2) * 1.05, 1)
 
-x = bolsa
-y =  relógio
-c = "manga_csm"
+print(f"O valor com 5% de desconto e de: R$ {ValorDesconto:.1f}")
+print(f"O valor do produto parcelado em 2x e de: R$ {ValorParcela2x:.2f}")
+print(f"O valor com um acréscimo de 5%, parcelado em 2x eh de: R$ {ValorParcela3x:.2f}")
 
-print("Otimo, escolha a forma de pagamento: (1) a vista com 5% de desconto; (2 parcelado em 2x; (3) parcelado em 3x com acréscimo de 5%")
-
-A = " a vista com 5% de desconto"
-B = "parcelado em 2x"
-G = "parcelado em 3x com acréscimo de 5%"
 
